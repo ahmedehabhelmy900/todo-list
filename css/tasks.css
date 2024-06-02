@@ -1,0 +1,92 @@
+.tasksPage {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.logout {
+  position: absolute;
+  bottom: -45px;
+}
+.logout input {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 7px;
+  font-size: 15px;
+  cursor: pointer;
+  z-index: 10;
+}
+.tasks .task {
+  display: flex;
+  background-color: orange;
+  padding: 15px 12px 5px;
+  box-shadow: 0 0 6px 3px #b9b9b9;
+  margin-top: 20px;
+}
+.tasks .task .editDate {
+  position: relative;
+}
+.tasks .task .editDate input[type="submit"] {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 3px 7px;
+  cursor: pointer;
+}
+.tasks .task .editDate input[type="text"] {
+  border: none;
+  padding: 10px;
+  min-width: calc(70vw - 200px);
+  outline: none;
+}
+.tasks .task .editDate h5 {
+  margin: 0;
+}
+.tasks .task .deleteForm [type='submit'] {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 4px 7px;
+  cursor: pointer;
+}
+@media (max-width: 574px) {
+  .addTask {
+    display: flex;
+    flex-direction: column;
+  }
+  .tasks .task .editDate input[type="text"] {
+    min-width: calc(100vw - 200px);
+  }
+}
+.addTask {
+  background-color: rgb(0, 1, 73);
+  padding: 17px 12px;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.addTask [type="text"]{
+  border: none;
+  outline: none;
+  width: 90%;
+  padding: 10px;
+}
+.addTask [type="submit"] {
+  border: none;
+  background-color: rgb(132, 0, 255);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  width: 10%;
+  min-width: 50px;
+}
+@media (max-width: 993px) {
+  .tasks .task .editDate input[type="text"] {
+    min-width: calc(100vw - 200px);
+  }
+}

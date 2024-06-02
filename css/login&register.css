@@ -1,0 +1,48 @@
+.login, .register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+.login div,
+.register div {
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  min-width: 25%;
+  border: #eee 20px solid;
+}
+.login form,
+.register form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.login form input,
+.register form input {
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+.login form input[type="submit"],
+.register form input[type="submit"] {
+  background-color: rgb(0, 1, 73);
+  color: white;
+  cursor: pointer;
+}
+.login form input:not([type="submit"]),
+.register form input:not([type="submit"]) {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 5px 5px #e1dfdf;
+}
+.login a,
+.register a {
+  text-decoration: none;
+}
+.error {
+  margin: 5px 0;
+  font-weight: 100;
+}
